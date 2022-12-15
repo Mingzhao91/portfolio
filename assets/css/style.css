@@ -1,3 +1,9 @@
+/* create variables that are shared among stylings */
+:root {
+  --primary-color: #8bc6cd;
+  --secondary-color: #30343c;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -31,5 +37,4 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-
 /* porfolio styling ends Here */
