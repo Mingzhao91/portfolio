@@ -36,5 +36,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--secondary-color);
+  padding: 1rem 0;
 }
 /* porfolio styling ends Here */
