@@ -44,4 +44,11 @@ p {
   background-color: var(--secondary-color);
   padding: 1rem 0;
 }
+
+/* porfolio name in header*/
+.header__name {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0 1rem 0 3rem;
+}
 /* porfolio styling ends Here */
