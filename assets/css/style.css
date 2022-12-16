@@ -62,9 +62,17 @@ p {
 
 /* style for each item inside unorder list in header */
 .header-nav-list-item {
-  width: 6.5rem;
   padding: 0.6rem;
   margin-right: 1rem;
+}
+
+/* style for each individual link in header navigation */
+.header-nav-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  display: inline-block;
 }
 
 /* porfolio styling ends Here */
