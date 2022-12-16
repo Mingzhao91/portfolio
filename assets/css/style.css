@@ -228,6 +228,8 @@ p {
   box-shadow: var(--box-shadow);
   display: flex;
   transition: box-shadow 0.5s ease-out;
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .work-content__part--full:hover,
