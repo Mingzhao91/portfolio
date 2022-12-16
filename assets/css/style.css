@@ -2,6 +2,14 @@
 :root {
   --primary-color: #8bc6cd;
   --secondary-color: #30343c;
+
+  /* breakpoints */
+  /*
+  --mobile: 480px;
+  --tablet: 768px;
+  --laptop: 1024px;
+  --desktop: 1200px;
+  */
 }
 
 * {
@@ -41,6 +49,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-flow: row wrap;
   background-color: var(--secondary-color);
   padding: 1rem 0;
 }
@@ -62,8 +71,8 @@ p {
 
 /* avatar in header */
 .header__avatar {
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 100px;
   border: 2px solid white;
 }
@@ -100,4 +109,18 @@ p {
 .header-nav-list-item:hover .header-nav-link {
   color: #fff;
 }
+
+/* media query for mobile device */
+@media only screen and (max-width: 480px) {
+  .header__name {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .header__avatar {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
 /* porfolio styling ends Here */
