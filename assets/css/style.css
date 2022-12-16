@@ -169,6 +169,57 @@ p {
   color: var(--tertiary-color);
   font-size: 1.4rem;
 }
+
+/* style each project section */
+.work-content {
+  display: flex;
+  flex-flow: wrap;
+  gap: 2rem;
+}
+
+.project-1 {
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+.project-2 {
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+.project-3 {
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+.project-4 {
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+.project-5 {
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+/* .project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5 {
+} */
+.work-content__part--full,
+.work-content__part--small {
+  border: 0.6rem solid var(--primary-color);
+}
+
+/* set 100% width of parent for the first project */
+.work-content__part--full {
+  flex: 1 0 100%;
+  height: 50rem;
+}
+
+/* set 45% width of parent for the remaining projects */
+.work-content__part--small {
+  flex: 1 0 45%;
+  height: 25rem;
+}
+
 /* main container ends here */
 
 /* media query for mobile device */
@@ -238,6 +289,19 @@ p {
 
   .page-section__content {
     flex: 0 0 100%;
+    padding: 1rem 2rem;
+  }
+
+  /* reduce the height of the first project in a small screen*/
+  .work-content__part--full {
+    height: 25rem;
+  }
+
+  /* set 100% width of parent and reduce height for all 
+  small projects in a small screen */
+  .work-content__part--small {
+    flex: 1 0 100%;
+    height: 12.5rem;
   }
   /* page wrapper ends here */
 }
@@ -283,9 +347,24 @@ p {
   }
   /* subtitle ends here */
 
+  /* page wrapper starts here */
   .page-section__header {
     font-size: 1.5rem;
   }
+
+  /* reduce the height of the first project in a small screen*/
+  .work-content__part--full {
+    height: 25rem;
+  }
+
+  /* set 100% width of parent and reduce the height
+   for all small projects in a small screen */
+  .work-content__part--small {
+    flex: 1 0 100%;
+    height: 12.5rem;
+  }
+
+  /* page wrapper ends here */
 }
 
 /* media query for portrait device */
@@ -337,6 +416,15 @@ p {
   .page-section__content {
     flex: 0 0 80%;
   }
+
+  .work-content__part--full {
+    height: 35rem;
+  }
+
+  .work-content__part--small {
+    flex: 1 0 45%;
+    height: 20rem;
+  }
   /* page wrapper ends here */
 }
 
@@ -370,6 +458,14 @@ p {
 
   .page-section__content {
     flex: 0 0 75%;
+  }
+
+  .work-content__part--full {
+    height: 50rem;
+  }
+
+  .work-content__part--small {
+    height: 25rem;
   }
   /* page wrapper ends here */
 }
