@@ -146,8 +146,12 @@ p {
   /* header ends here */
 }
 
-/* media query for portrait device */
+/* media query for larger mobile */
 @media only screen and (min-width: 480px) {
+}
+
+/* media query for portrait device */
+@media only screen and (min-width: 600px) {
 }
 
 /* media query for landscape device */
@@ -155,7 +159,7 @@ p {
 }
 
 /* media query for laptop */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
 }
 
 /* media query for desktop */
