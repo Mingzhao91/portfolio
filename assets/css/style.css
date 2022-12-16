@@ -100,6 +100,14 @@ p {
   color: #fff;
 }
 
+/* set background image for banner */
+.hero-banner {
+  background-image: url("../images/02-hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 20rem rgb(3 46 137 / 45%);
+}
+
 /* media query for mobile device */
 @media only screen and (max-width: 480px) {
   /* header starts here */
@@ -131,6 +139,12 @@ p {
     border-bottom-width: 0.2rem;
   }
   /* header ends here */
+
+  /* banner starts here */
+  .hero-banner {
+    height: 10rem;
+  }
+  /* banner ends here */
 }
 
 /* media query for larger mobile */
@@ -152,6 +166,12 @@ p {
     font-size: 1.35rem;
     border-bottom-width: 0.25rem;
   }
+
+  /* banner starts here */
+  .hero-banner {
+    height: 10rem;
+  }
+  /* banner ends here */
 }
 
 /* media query for portrait device */
@@ -172,10 +192,21 @@ p {
   .header-nav-link {
     font-size: 1.5rem;
   }
+
+  /* banner starts here */
+  .hero-banner {
+    height: 12rem;
+  }
+  /* banner ends here */
 }
 
 /* media query for landscape device */
 @media only screen and (min-width: 768px) {
+  /* banner starts here */
+  .hero-banner {
+    height: 15rem;
+  }
+  /* banner ends here */
 }
 
 /* media query for laptop */
