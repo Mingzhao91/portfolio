@@ -64,6 +64,7 @@ p {
 .header-nav-list-item {
   padding: 0.6rem;
   margin-right: 1rem;
+  transition: background-color 0.3s linear;
 }
 
 /* style for each individual link in header navigation */
@@ -73,6 +74,14 @@ p {
   color: var(--primary-color);
   border-bottom: 3px solid var(--primary-color);
   display: inline-block;
+  transition: color 0.3s linear;
 }
 
+.header-nav-list-item:hover {
+  background-color: var(--primary-color);
+}
+
+.header-nav-list-item:hover .header-nav-link {
+  color: #fff;
+}
 /* porfolio styling ends Here */
