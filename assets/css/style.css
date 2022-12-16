@@ -137,11 +137,11 @@ p {
 /* set background color and place items vertically in page wrapper */
 .page-wrapper {
   background-color: var(--background-color);
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 /* each page section is a flexbox that wraps content if overflows  */
@@ -154,11 +154,20 @@ p {
 .page-section__header {
   flex: 0 0 25%;
   border-right: 0.3rem solid var(--tertiary-color);
+  color: var(--tertiary-color);
+  text-align: right;
+  padding-right: 0.5rem;
+  word-break: break-word;
+  word-spacing: 100rem;
+  font-size: 3rem;
 }
 
 /* page section content fixes to 75% */
 .page-section__content {
   flex: 0 0 75%;
+  padding: 0 2rem;
+  color: var(--tertiary-color);
+  font-size: 1.4rem;
 }
 /* main container ends here */
 
@@ -209,10 +218,6 @@ p {
     font-size: 1.3rem;
   }
 
-  .subtitle__header {
-    font-size: 1.3rem;
-  }
-
   .subtitle__header--strong {
     font-size: 1.7rem;
   }
@@ -221,8 +226,14 @@ p {
 
   /* page wrapper starts here */
   .page-section__header {
-    /*flex: 0 0 100%;*/
+    flex: 0 1 30%;
+    text-align: left;
     border-right: none;
+    word-spacing: 0;
+    background-color: var(--primary-color);
+    padding-left: 0.8rem;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
   }
 
   .page-section__content {
@@ -270,8 +281,11 @@ p {
   .subtitle__header--strong {
     font-size: 1.9rem;
   }
-
   /* subtitle ends here */
+
+  .page-section__header {
+    font-size: 1.5rem;
+  }
 }
 
 /* media query for portrait device */
@@ -317,6 +331,7 @@ p {
   /* page wrapper starts here */
   .page-section__header {
     flex: 0 0 20%;
+    font-size: 2rem;
   }
 
   .page-section__content {
