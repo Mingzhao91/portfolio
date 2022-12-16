@@ -81,8 +81,11 @@ p {
 .header-nav-list {
   padding: 0;
   list-style-type: none;
-  display: flex;
   margin-right: 4rem;
+
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-end;
 }
 
 /* style for each item inside unorder list in header */
@@ -120,6 +123,10 @@ p {
   .header__avatar {
     width: 4rem;
     height: 4rem;
+  }
+
+  .header-nav-list {
+    flex-grow: 1;
   }
 }
 
