@@ -4,6 +4,7 @@
   --secondary-color: #30343c;
   --tertiary-color: #3e5674;
   --background-color: #ecedf5;
+  --light-color: #ffffff;
   --box-shadow: inset 0 0 0 200rem rgb(3 46 137 / 45%);
 }
 
@@ -102,7 +103,7 @@ p {
 
 /* change link color when hover navigation item */
 .header-nav-list-item:hover .header-nav-link {
-  color: #fff;
+  color: var(--light-color);
 }
 
 /* set background image for banner */
@@ -201,7 +202,6 @@ p {
 /* project subtitle */
 .project-info {
   background-color: var(--primary-color);
-
   align-self: flex-end;
   margin-bottom: 2rem;
   padding: 1rem;
@@ -245,6 +245,41 @@ p {
 .work-content__part--small {
   flex: 1 0 45%;
   height: 25rem;
+}
+
+/* use flex for contact wrapper */
+.contact-section {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* style for each item inside unorder list in header */
+.contact-link-wrapper {
+  padding: 0.6rem;
+  margin-right: 1rem;
+  transition: background-color 0.3s linear;
+}
+
+/* style for each individual link in header navigation */
+.contact-link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--secondary-color);
+  border-bottom: 0.3rem solid var(--secondary-color);
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+
+/* change background color when hover navigation item */
+.contact-link-wrapper:hover {
+  background-color: var(--primary-color);
+}
+
+/* change link color when hover navigation item */
+.contact-link-wrapper:hover .contact-link {
+  color: var(--light-color);
+  border-color: var(--primary-color);
 }
 
 /* main container ends here */
@@ -472,7 +507,7 @@ p {
   /* page wrapper ends here */
 }
 
-/* media query for landscape device */
+/* media query for landscape device or above */
 @media only screen and (min-width: 768px) {
   /* banner starts here */
   .hero-banner {
@@ -515,11 +550,11 @@ p {
 }
 
 /* media query for laptop */
-@media only screen and (min-width: 992px) {
-}
+/* @media only screen and (min-width: 992px) {
+} */
 
 /* media query for desktop */
-@media only screen and (min-width: 1200px) {
-}
+/* @media only screen and (min-width: 1200px) {
+} */
 
 /* porfolio styling ends Here */
