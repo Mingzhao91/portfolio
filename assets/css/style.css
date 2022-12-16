@@ -2,6 +2,8 @@
 :root {
   --primary-color: #8bc6cd;
   --secondary-color: #30343c;
+  --tertiary-color: #3e5674;
+  --background-color: #ecedf5;
 }
 
 * {
@@ -130,6 +132,36 @@ p {
   font-size: 2.2rem;
 }
 
+/* main container starts here */
+
+/* set background color and place items vertically in page wrapper */
+.page-wrapper {
+  background-color: var(--background-color);
+  padding: 2rem 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* each page section is a flexbox that wraps content if overflows  */
+.page-section {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* page section header fixes to 25% */
+.page-section__header {
+  flex: 0 0 25%;
+  border-right: 0.3rem solid var(--tertiary-color);
+}
+
+/* page section content fixes to 75% */
+.page-section__content {
+  flex: 0 0 75%;
+}
+/* main container ends here */
+
 /* media query for mobile device */
 @media only screen and (max-width: 480px) {
   /* header starts here */
@@ -186,6 +218,17 @@ p {
   }
 
   /* subtitle ends here */
+
+  /* page wrapper starts here */
+  .page-section__header {
+    /*flex: 0 0 100%;*/
+    border-right: none;
+  }
+
+  .page-section__content {
+    flex: 0 0 100%;
+  }
+  /* page wrapper ends here */
 }
 
 /* media query for larger mobile */
@@ -270,6 +313,16 @@ p {
     font-size: 2.1rem;
   }
   /* subtitle ends here */
+
+  /* page wrapper starts here */
+  .page-section__header {
+    flex: 0 0 20%;
+  }
+
+  .page-section__content {
+    flex: 0 0 80%;
+  }
+  /* page wrapper ends here */
 }
 
 /* media query for landscape device */
@@ -293,6 +346,17 @@ p {
     font-size: 2.2rem;
   }
   /* subtitle ends here */
+
+  /* page wrapper starts here */
+  .page-section__header {
+    flex: 0 0 25%;
+    border-right: 0.3rem solid var(--tertiary-color);
+  }
+
+  .page-section__content {
+    flex: 0 0 75%;
+  }
+  /* page wrapper ends here */
 }
 
 /* media query for laptop */
