@@ -51,4 +51,12 @@ p {
   color: var(--secondary-color);
   padding: 0 1rem 0 3rem;
 }
+
+/* remove dot, padding for header unorder list and make it flex */
+.header-nav-list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  margin-right: 4rem;
+}
 /* porfolio styling ends Here */
