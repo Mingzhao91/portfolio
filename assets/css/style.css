@@ -2,14 +2,6 @@
 :root {
   --primary-color: #8bc6cd;
   --secondary-color: #30343c;
-
-  /* breakpoints */
-  /*
-  --mobile: 480px;
-  --tablet: 768px;
-  --laptop: 1024px;
-  --desktop: 1200px;
-  */
 }
 
 * {
@@ -81,16 +73,12 @@ p {
 .header-nav-list {
   padding: 0;
   list-style-type: none;
-  margin-right: 4rem;
-
   display: flex;
   flex: 1 1 auto;
-  justify-content: flex-end;
 }
 
 /* style for each item inside unorder list in header */
 .header-nav-list-item {
-  padding: 0.6rem;
   margin-right: 1rem;
   transition: background-color 0.3s linear;
 }
@@ -98,7 +86,6 @@ p {
 /* style for each individual link in header navigation */
 .header-nav-link {
   text-decoration: none;
-  font-size: 1.5rem;
   color: var(--primary-color);
   border-bottom: 0.3rem solid var(--primary-color);
   display: inline-block;
@@ -148,10 +135,43 @@ p {
 
 /* media query for larger mobile */
 @media only screen and (min-width: 480px) {
+  .header__nav {
+    width: 100%;
+  }
+
+  .header-nav-list {
+    margin: 0.8rem 0 0 0;
+    justify-content: space-evenly;
+  }
+
+  .header-nav-list-item {
+    padding: 0.5rem;
+  }
+
+  .header-nav-link {
+    font-size: 1.35rem;
+    border-bottom-width: 0.25rem;
+  }
 }
 
 /* media query for portrait device */
 @media only screen and (min-width: 600px) {
+  .header__nav {
+    width: auto;
+  }
+
+  .header-nav-list {
+    margin-right: 4rem;
+    justify-content: flex-end;
+  }
+
+  .header-nav-list-item {
+    padding: 0.6rem;
+  }
+
+  .header-nav-link {
+    font-size: 1.5rem;
+  }
 }
 
 /* media query for landscape device */
