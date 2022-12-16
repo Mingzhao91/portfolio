@@ -100,7 +100,7 @@ p {
   text-decoration: none;
   font-size: 1.5rem;
   color: var(--primary-color);
-  border-bottom: 3px solid var(--primary-color);
+  border-bottom: 0.3rem solid var(--primary-color);
   display: inline-block;
   transition: color 0.3s linear;
 }
@@ -115,6 +115,7 @@ p {
 
 /* media query for mobile device */
 @media only screen and (max-width: 480px) {
+  /* header starts here */
   .header__name {
     font-size: 1.5rem;
     line-height: 1.2;
@@ -125,9 +126,24 @@ p {
     height: 4rem;
   }
 
-  .header-nav-list {
-    flex-grow: 1;
+  .header__nav {
+    width: 100%;
   }
+
+  .header-nav-list {
+    margin: 0.7rem 0 0 0;
+    justify-content: space-evenly;
+  }
+
+  .header-nav-list-item {
+    padding: 0.4rem;
+  }
+
+  .header-nav-link {
+    font-size: 1.2rem;
+    border-bottom-width: 0.2rem;
+  }
+  /* header ends here */
 }
 
 /* porfolio styling ends Here */
