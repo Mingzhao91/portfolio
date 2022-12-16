@@ -227,6 +227,12 @@ p {
   border: 0.6rem solid var(--primary-color);
   box-shadow: var(--box-shadow);
   display: flex;
+  transition: box-shadow 0.5s ease-out;
+}
+
+.work-content__part--full:hover,
+.work-content__part--small:hover {
+  box-shadow: none;
 }
 
 /* set 100% width of parent for the first project */
