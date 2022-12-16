@@ -197,15 +197,35 @@ p {
   background-image: url("../images/02-run-buddy.jpg");
 }
 
-/* .project-1,
-.project-2,
-.project-3,
-.project-4,
-.project-5 {
-} */
+/* project subtitle */
+.project-info {
+  background-color: var(--primary-color);
+
+  align-self: flex-end;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 2.5rem;
+  border: none;
+  margin-left: -0.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* project name  */
+.project-info__name {
+  font-weight: bold;
+}
+
+/* project technology */
+.project-info__tech {
+  font-size: 1.5rem;
+}
+
 .work-content__part--full,
 .work-content__part--small {
   border: 0.6rem solid var(--primary-color);
+
+  display: flex;
 }
 
 /* set 100% width of parent for the first project */
@@ -303,6 +323,15 @@ p {
     flex: 1 0 100%;
     height: 12.5rem;
   }
+
+  .project-info {
+    padding: 0.5rem;
+  }
+
+  .project-info__name {
+    font-size: 2rem;
+  }
+
   /* page wrapper ends here */
 }
 
@@ -362,6 +391,10 @@ p {
   .work-content__part--small {
     flex: 1 0 100%;
     height: 12.5rem;
+  }
+
+  .project-info {
+    padding: 0.5rem;
   }
 
   /* page wrapper ends here */
@@ -424,6 +457,10 @@ p {
   .work-content__part--small {
     flex: 1 0 45%;
     height: 20rem;
+  }
+
+  .project-info {
+    padding: 1rem;
   }
   /* page wrapper ends here */
 }
