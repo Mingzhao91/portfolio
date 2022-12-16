@@ -59,4 +59,12 @@ p {
   display: flex;
   margin-right: 4rem;
 }
+
+/* style for each item inside unorder list in header */
+.header-nav-list-item {
+  width: 6.5rem;
+  padding: 0.6rem;
+  margin-right: 1rem;
+}
+
 /* porfolio styling ends Here */
