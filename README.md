@@ -53,7 +53,7 @@ This section shows the most recent front end projects in an image block represen
 
 ### Contact Me
 
-This section provies various ways for recruiters and companys to contact me via email or GitHub.
+This section provides email and GitHub for user to contact me and see my projects in Github.
 
 ![Hero Image](./assets/images/screenshots/portfolio-contact-me.png)
 
